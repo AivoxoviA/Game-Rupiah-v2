@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:game_rupiah/constant.dart';
+import 'package:game_rupiah/screens/splash.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,11 +17,8 @@ class MainApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      title: Constant.appName,
+      home: ScreenSplash(),
     );
   }
 }
